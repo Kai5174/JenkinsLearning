@@ -6,6 +6,7 @@ pipeline {
                 sh 'python --version'
                 sh 'ls'
                 sh 'sudo apt-get install vim'
+                sh 'ls'
             }
         }
     }
