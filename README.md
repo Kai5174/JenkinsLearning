@@ -39,7 +39,7 @@ Then you should be able to obtain the InitialAdminPassword
 ## Pipeline
 View [Official Doc](https://jenkins.io/doc/pipeline/tour/hello-world/) for more information
 
-Create new file `Jenkinsfile` with content
+Create new file `Jenkinsfile` with content (This is for naive implementation, the example is in my git repository [here](https://github.com/Kai5174/JenkinsLearning))
 ```
 pipeline {
     agent { docker 'python:3.5.1' }
@@ -52,3 +52,10 @@ pipeline {
     }
 }
 ```
+
+push it into your git repository.
+```sh
+git push origin master
+```
+
+Then go to the `localhost:49001`, choose new Item, with `multiPipelines` properties, then config the rules and access credential. Now the Jenkins should be work
